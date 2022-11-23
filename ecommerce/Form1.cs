@@ -30,5 +30,16 @@ namespace ecommerce
             Prodotto p = new Prodotto(textBox5.Text, textBox1.Text, textBox3.Text, textBox2.Text, textBox4.Text);
             c.aggiungiProdotto(p);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Prodotto p = new Prodotto(textBox5.Text, textBox1.Text, textBox3.Text, textBox2.Text, textBox4.Text);
+            c.rimuovi(p);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            c.svuota();
+        }
     }
 }
